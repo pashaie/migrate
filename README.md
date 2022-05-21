@@ -111,8 +111,8 @@ Create your database role (if desired), database and shadow database:
 
 ```bash
 createuser --pwprompt appuser
-createdb myapp --owner=appuser
-createdb myapp_shadow --owner=appuser
+createdb myapp -O appuser
+createdb myapp_shadow -O appuser
 ```
 
 Export your database URL, shadow database URL, and a "root" database URL which
